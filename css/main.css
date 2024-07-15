@@ -669,6 +669,10 @@ footer p {
 		align-items: center;
 	}
 
+	.about-us img {
+		align-self: start;
+	}
+
 	.about {
 		margin: 20px 0 100px 0;
 	}
