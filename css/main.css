@@ -96,7 +96,7 @@ p {
 	font-size: 16px;
 }
 
-/* =========== BUTTON ANIMATION ============ */
+/* =========== ANIMATION ============ */
 
 
 @keyframes buttonhover {
@@ -117,7 +117,7 @@ button:hover {
 	animation-name: buttonhover;
 	animation-duration: 1s;
 	animation-delay: 0.2s;
-	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
 }
 
 button:focus {
@@ -141,6 +141,25 @@ button:focus {
 	animation-iteration-count: infinite;
 
 }
+
+@keyframes nav {
+	
+	0% {
+		color: white;
+	}
+
+	100% {
+		color:#d69e3d;
+	}
+  }
+
+  .menu ul li a:hover {
+	animation-name: nav;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+	animation-fill-mode: forwards;
+}
+
 
 /* ========== NAVIGATION BAR STYLE ============ */
 
@@ -188,9 +207,6 @@ button:focus {
 	padding: 0 15px 0 15px;
 }
 
-.menu ul li a:hover {
-	color: #d69e3d;
-}
 
 
 /* =============== BANNER STYLE =============== */
